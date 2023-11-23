@@ -1,1 +1,2 @@
 # CARD_PAYMENT_SECURITY_WITH_ENCRYPTION_METHOD
+In this project, we have implemented the rsa algorithm to encrypt the card number and pin from the frontend to the backend. Once the client encrypted both, server will decrypt and will be checking whether the given number is actually present in the dictionary. If the number present in the dictionary, "Success.html" will generate and if not "Failure.html" template will generate and then we return back to the home page in 5 seconds. By this we are ensuring the secure transaction between client and the server.
