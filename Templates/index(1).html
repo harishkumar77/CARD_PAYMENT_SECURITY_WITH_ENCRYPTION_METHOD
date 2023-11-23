@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bank Website</title>
+  <style>
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-image: url(floriane-vita-FyD3OWBuXnY-unsplash.jpg);
+      background-size: cover;
+      background-position: cover;
+    }
+
+    .login-form {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-form">
+    <h1>Bank Website</h1>
+    <form method="POST">
+      <label for="card_number">Card Number (16 digits):</label>
+      <input type="text" name="card_number" required pattern="\d{16}" title="Please enter a 16-digit card number."><br><br>
+      
+      <label for="pin">PIN (5 digits):</label>
+      <input type="text" name="pin" required pattern="\d{5}" title="Please enter a 5-digit PIN."><br><br>
+      
+      <label for="amount">Amount:</label>
+      <input type="text" name="amount" required pattern="\d+" title="Please enter a valid amount."><br><br>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
